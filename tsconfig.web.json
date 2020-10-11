@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "src/server"
+  ],
+  "include": [
+    "src/client",
+    "src/typings"
+  ]
+}
