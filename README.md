@@ -1,8 +1,6 @@
-# Fullstack-Typescript
+# Deliver-IT Challenge
 
-Typescript fullstack boilerplate hosted here at [fullstack-typescript]. The goal is to enable developers, a.k.a. me and
-you, deliver fullstack applications while sharing type definitions between the frontend and backend while maintaining
-code editor intellisense.
+frontend deployed at https://deliver-it.cescoferraro.xyz
+backend deployed at https://deliver-api.cescoferraro.xyz
 
-
-[fullstack-typescript]: http://github.com/cescoferraro/fullstack-typescript
+[deliver-it-challenge]: http://github.com/cescoferraro/deliver-it-challenge

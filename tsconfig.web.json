@@ -1,5 +1,11 @@
 {
   "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "typeRoots": [
+      "src/client/declaration.d.ts"
+    ]
+  },
   "exclude": [
     "src/server"
   ],

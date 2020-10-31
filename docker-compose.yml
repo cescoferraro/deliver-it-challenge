@@ -1,0 +1,32 @@
+version: '3.2'
+services:
+  deliver_web:
+    container_name: web_deliver
+    build:
+      context: ./build
+    ports:
+      - "80"
+    environment:
+      - VIRTUAL_HOST=deliver-it.cescoferraro.xyz
+      - VIRTUAL_PORT=80
+      - LETSENCRYPT_HOST=deliver-it.cescoferraro.xyz
+      - LETSENCRYPT_EMAIL=francescoaferraro@gmail.com
+    networks:
+      global:
+  deliver_api:
+    container_name: deliver_api
+    build:
+      context: ./dist/server
+    ports:
+      - "4000:4000"
+    environment:
+      - VIRTUAL_HOST=deliver-api.cescoferraro.xyz
+      - VIRTUAL_PORT=4000
+      - KUBERNETES=true
+      - LETSENCRYPT_HOST=deliver-api.cescoferraro.xyz
+      - LETSENCRYPT_EMAIL=francescoaferraro@gmail.com
+    networks:
+      global:
+networks:
+  global:
+    external: true

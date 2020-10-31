@@ -10,9 +10,18 @@
   ],
   "extends": [
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
   ],
   "rules": {
+    "prettier/prettier": [
+      "error",
+      {},
+      {
+        "usePrettierrc": true
+      }
+    ],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off"

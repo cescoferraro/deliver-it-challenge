@@ -1,0 +1,18 @@
+{
+  "transforms": [
+    {
+      "mode": "ts",
+      "include": "**/*.ts",
+      "emitTemplate": "{{dir}}/{{name}}.types.ts"
+    }
+  ],
+  "srcDir": "./src/server",
+  "failOnError": false,
+  "camelCaseColumnNames": false,
+  "db": {
+    "host": "tuffi.db.elephantsql.com",
+    "user": "qfekqmhk",
+    "dbName": "qfekqmhk",
+    "password": "8suZ3jbhC0Ez0c9Nf_jxgZ0_uEBRJQxN"
+  }
+}
